@@ -1,8 +1,12 @@
+import NavBar from "./components/NavBar";
+import Hero from "./components/Hero";
+
 function App() {
   return (
-    <>
-      <h1>Hello world</h1>
-    </>
+    <main>
+      <NavBar />
+      <Hero />
+    </main>
   );
 }
 
