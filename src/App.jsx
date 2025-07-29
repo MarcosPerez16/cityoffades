@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Banner from "./components/Banner";
 import HaircutCarousel from "./components/HaircutCarousel";
 import AboutUs from "./components/AboutUs";
+import Services from "./components/Services";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Banner />
       <HaircutCarousel />
       <AboutUs />
+      <Services />
     </main>
   );
 }
