@@ -9,10 +9,9 @@ const NavBar = () => {
           <a href="#services">SERVICES</a>
         </div>
 
-        {/* LOGO */}
-        <div>
-          {/* LOGO HERE */}
-          <img className="nav-logo" src="/logo.jpg" alt="City of Fades Logo" />
+        {/* LOGO IN MIDDLE */}
+        <div className="nav-logo">
+          <img src="/logo.jpg" alt="City of Fades Logo" />
         </div>
 
         {/* RIGHT SIDE LINKS */}

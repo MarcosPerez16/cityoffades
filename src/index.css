@@ -41,7 +41,6 @@ a {
 }
 
 /* NAV BAR */
-
 .navbar {
   position: absolute;
   top: 0;
@@ -53,17 +52,23 @@ a {
 
 .nav-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
-.nav-links-left,
+.nav-links-left {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  color: white;
+}
+
 .nav-links-right {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   align-items: center;
   color: white;
 }
@@ -71,18 +76,12 @@ a {
 .nav-links-left a,
 .nav-links-right a {
   transition: color 0.3s ease;
-  padding: 8px 0;
+  font-weight: 500;
 }
 
 .nav-links-left a:hover,
 .nav-links-right a:hover {
   color: #dc2626;
-}
-
-.nav-logo {
-  height: 150px;
-  width: auto;
-  border-radius: 8px;
 }
 
 .book-btn {
@@ -99,15 +98,24 @@ a {
   background-color: #b91c1c;
 }
 
+.nav-logo {
+  flex-shrink: 0; /* Prevents logo from shrinking */
+}
+
+.nav-logo img {
+  height: 120px; /* Reasonable size that won't break layout */
+  width: auto;
+}
+
 /* HERO */
 
 .hero {
   height: 100vh;
   background-image: linear-gradient(
       to bottom,
-      rgba(0, 0, 0, 0.7) 0%,
-      rgba(0, 0, 0, 0.3) 50%,
-      rgba(0, 0, 0, 0.6) 100%
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 0.7) 100%
     ),
     url("/hero/hero-img.jpg");
   background-size: cover;
@@ -128,21 +136,45 @@ a {
   font-family: "Poppins", sans-serif;
   font-size: 4rem;
   font-weight: 700;
-  margin-bottom: 1rem;
 }
 
-.hero-cta {
-  background-color: #dc2626;
+/* BANNER */
+.banner {
+  background-color: #1a1a1a;
+  padding: 20px 0;
+}
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.banner-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: white;
-  padding: 16px 32px;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: 600;
-  font-family: "Poppins", sans-serif;
-  transition: background-color 0.3s ease;
-  margin-top: 2rem;
 }
 
-.hero-cta:hover {
-  background-color: #b91c1c;
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.banner-label {
+  font-size: 0.9rem;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.banner-value {
+  font-size: 1rem;
+  color: white;
 }
