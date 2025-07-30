@@ -1,9 +1,9 @@
 const Hero = () => {
   return (
-    <section className="hero">
+    <section id="home" className="hero">
       <div className="hero-content">
         <h1 className="hero-title">
-          PREMIUM CUTS <br /> & <br /> FRESH FADES
+          CITY OF FADES <br /> BARBERSHOP
         </h1>
       </div>
     </section>

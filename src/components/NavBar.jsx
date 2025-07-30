@@ -1,4 +1,11 @@
 const NavBar = () => {
+  const handleBookNow = () => {
+    const element = document.getElementById("contact");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="nav-container">
@@ -18,7 +25,9 @@ const NavBar = () => {
         <div className="nav-links-right">
           <a href="#gallery">GALLERY</a>
           <a href="#contact">CONTACT</a>
-          <button className="book-btn">BOOK NOW</button>
+          <button className="book-btn" onClick={handleBookNow}>
+            BOOK NOW
+          </button>
         </div>
       </div>
     </nav>
