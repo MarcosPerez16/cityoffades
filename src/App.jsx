@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import HaircutCarousel from "./components/HaircutCarousel";
 import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
+import Gallery from "./components/Gallery";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <HaircutCarousel />
       <AboutUs />
       <Services />
+      <Gallery />
     </main>
   );
 }
