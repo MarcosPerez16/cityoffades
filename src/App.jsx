@@ -5,6 +5,7 @@ import HaircutCarousel from "./components/HaircutCarousel";
 import AboutUs from "./components/AboutUs";
 import Services from "./components/Services";
 import Gallery from "./components/Gallery";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <AboutUs />
       <Services />
       <Gallery />
+      <Testimonials />
     </main>
   );
 }
